@@ -26,14 +26,15 @@ module.exports = {
         type: Sequelize.DATE
       },
 
-      updateAt: {
+      updatedAt: {
         type: Sequelize.DATE
-      }
+      },
 
-    })
+
+    });
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable("planets")
+    await queryInterface.dropTable("planets");
   }
 };
